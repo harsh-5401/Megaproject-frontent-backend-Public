@@ -1,0 +1,39 @@
+// to run both backend and frontend at same time simuntaneouly
+
+// step 1- npm i concurrently
+
+// step 2- if not add these lines in package.json => scripts
+
+// "server": "cd server && npm run dev",
+//     "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
+
+// step -3  npm run dev        to start both fontend and backend
+
+
+
+//////////////////   to setup Frontend install following commands    ///////////////
+
+
+// 1-npm i react-router-dom
+// 2-npm i react-icons
+// 3-npm i react-type-animation
+// 4-npm i redux-toolkit
+// 5-npm i @reduxjs/toolkit
+// 6-npm i react-hot-toast
+// 6-npm i react-icons
+// 7-npm i axios
+// 8-npm i react-otp-input
+// 9-npm i react-hook-form
+// 10-npm i @ramonak/react-progress-bar
+// 11-npm install --save @ramonak/react-progress-bar
+// 12-npm i react-rating-stars-component
+// 13-npm i react-dropzone
+// 14-npm i video-react
+// 15-npm install classnames
+// 16-npm install file-loader --save-dev
+// 17-npm i react-super-responsive-table
+// 18-npm i swiper
+// 19-npm i copy-to-clipboard
+// 20- npm i video-react
+// 21- npm i chart.js
+// 22- npm i react-chartjs-2
