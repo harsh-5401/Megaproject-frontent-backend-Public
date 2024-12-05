@@ -50,50 +50,7 @@ function Requirementfields({name , errors , register , setValue , getValues , la
 
 
   return (
-    // <div className='text-yellow-25'>
-
-    //     <label htmlFor={name}>{label} <sup>*</sup></label>
-    //     <div>
-    //         <input type='text' 
-    //         id={name}
-    //         name={name}
-    //         value={requirements}
-    //         onChange={(e)=> setrequirements(e.target.value)}
-    //         className='w-full'>
-    //         </input>
-
-    //         <button type='button' onClick={handleAddRequirement} className='font-semibold text-yellow-50'>
-    //             Add
-    //         </button>
-    //     </div>
-
-    //     {
-    //         requirementlist.length> 0 && (
-    //             <ul>
-    //                 {
-    //                     requirementlist.map((requirement , index) => {
-    //                         return <li key={index} className='flex items-center text-richblack-5'>
-    //                             <span>{requirement}</span>
-    //                             <button type='button'  onClick={()=>handleRemoveRequirement(index)} className='text-richblue-25'>clear</button>
-    //                         </li>
-    //                     })
-    //                 }
-    //             </ul>
-    //         )
-    //     }
-
-    //     {
-    //         errors.name && (
-    //             <span>{label} is Required</span>
-    //         )
-    //     }
-      
-    // </div>
-
-
-
-
-
+    
 
     <div className="flex flex-col space-y-2">
       <label className="text-sm text-richblack-5" htmlFor={name}>

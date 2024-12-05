@@ -1,24 +1,7 @@
 import React from 'react'
 import Iconbutton from './Iconbutton'
 
-// function ConfirmationModal({modaldata}) {
-//   return (
-//     <div className='relative mt-0'>
-      
-//       <div className='text-white'>
-//         <p>{modaldata.text1}</p>
-//         <p>{modaldata.text2}</p>
-//         <div>
-//             <Iconbutton onclick={modaldata.btn1Handler} text={modaldata?.btn1text}></Iconbutton>
-//             <button onClick={modaldata.button2Handler} >
-//               {modaldata.btn2text}
-//             </button>
-//         </div>
-//       </div>
 
-//     </div>
-//   )
-// }
 
 
 function ConfirmationModal({modaldata}) {

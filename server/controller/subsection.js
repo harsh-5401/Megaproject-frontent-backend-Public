@@ -86,7 +86,7 @@ require("dotenv").config();
 }
 
 
-//HW update subsection and delete subsection remaining down
+//TODO :update subsection and delete subsection remaining down
 
 async function updatesubsection(req,res){
     try{

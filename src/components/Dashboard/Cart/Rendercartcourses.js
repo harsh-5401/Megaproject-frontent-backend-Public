@@ -12,38 +12,7 @@ function Rendercartcourses() {
     const dispatch= useDispatch();
     const {cart} = useSelector((state)=>state.cart)
   return (
-    // <div>
-    //   {
-    //     cart.map((course , index)=> {
-    //     return <div key={index}>
-    //             <div>
-    //                 <img src={course?.thumbnail || defaultimage} alt='course thumbnail'></img>
-    //                 <div>
-    //                     <p>{course?.coursename}</p>
-    //                     <p>{course?.category?.name}</p>
-    //                 </div>
-    //                 <div>
-    //                     {/* rating */}
-    //                     <span>4.8</span>
-
-    //                     <ReactStars count={5} size={20} edit={false} activeColor="#ffd700" emptyIcon={<GiNinjaStar></GiNinjaStar>} fullIcon={<GiNinjaStar></GiNinjaStar>}  ></ReactStars>
-
-    //                     <span>{course?.ratingAndreviews?.length}</span>
-    //                 </div>
-    //             </div>
-    //             <div>
-    //                 <button onClick={()=>dispatch(removefromcart(course._id))}>
-    //                     <RiDeleteBin6Line></RiDeleteBin6Line>
-    //                     <span>Remove</span>
-                    
-    //                 </button>
-
-    //                 <p>{course?.price}</p>
-    //             </div>
-    //         </div>
-    //     })
-    //   }
-    // </div>
+    
 
 
     <div className="flex flex-1 flex-col">

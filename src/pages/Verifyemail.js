@@ -7,70 +7,7 @@ import { BiArrowBack } from "react-icons/bi"
 import { RxCountdownTimer } from 'react-icons/rx';
 
 
-// function Verifyemail() {
-//     const {loading , signupData} =useSelector((state) => state.auth);
-//     const [otp , setotp] = useState("")
-//     const dispatch=useDispatch()
-//     const navigate=useNavigate();
 
-//     // what if we dont have any data in signupdata
-
-//     useEffect(()=> {
-//         if(!signupData) {
-//             navigate("/signup")
-//         }
-//     })
-
-//     function handleonsubmit(e) {
-//         e.preventDefault();
-
-//         console.log("signupdata =" , signupData)
-
-//         const  {
-//             firstname , 
-//             lastname , 
-//             accounttype , 
-//             password  , 
-//             confirmpassword,
-//             email , 
-            
-//         } =signupData
-
-//         dispatch(signUp(accounttype , firstname , lastname , password, confirmpassword , otp , email , navigate));
-
-//     }
-//   return (
-//     <div>
-//       {
-//         loading ? (<div>Loading..</div>) : (
-//             <div className='text-yellow-25 flex flex-col justify-center items-center'>
-//                 <p>Verify Email</p>
-//                 <p>A verification code is send to you. Enter the code below</p>
-//                 <form onSubmit={handleonsubmit} className='text-richblack-400' >
-//                     <OTPInput value={otp} onChange={setotp} numInputs={6} renderSeparator={<span>-</span>} renderInput={(props) => <input className='text-richblack-800 ' {...props} />} >
-
-//                     </OTPInput>
-
-//                     <button type='submit' className='text-yellow-25'>Verify Email</button>
-
-//                 </form>
-
-//                 <div>
-//                     <div>
-//                         <Link to="/login">Back to login</Link>
-//                     </div>
-
-//                     <button onClick={()=> dispatch(sendOtp(signupData.email , navigate))}>Resend it</button>
-
-//                 </div>
-
-                
-//             </div>
-//         )
-//       }
-//     </div>
-//   )
-// }
 
 
 function Verifyemail() {

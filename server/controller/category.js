@@ -76,56 +76,6 @@ async function showallcategory(req,res){
     }
 }
 
-// intent-to show different types of courses
-
-// async function categorypageDetails(req, res){
-//     try{
-        
-//         // get category id
-//         const{categoryid} = req.body;
-        
-//         // get courses for specified category id
-//         const selectedcategory=await categorymodel.findById(categoryid).populate("courses").exec();
-
-//         console.log("selected categrory is " , selectedcategory);
-
-//         // validation 
-//         if(!selectedcategory){
-//             return res.status(404).json({
-//                 success:false,
-//                 message:"Data not found"
-//             });
-//         }
-
-//         // get courses for different categories
-//         const differentcategories=await categorymodel.find(
-//             // find data whose id is not equal to category id
-//                                         {_id : {$ne :categoryid} },
-//                                     ).populate("courses").exec();
-
-//         // get top selling courses  =>HW
-//         // return response
-
-//         console.log("different categories = " , differentcategories)
-
-//         return res.status(200).json({
-//             success:true,
-//             data:{
-//                 selectedcategory,
-//                 differentcategories,
-//                 // topselling categoies 
-//             }
-//         })
-
-//     } catch(error) {
-//         console.log(error);
-//         return res.status(500).json({
-//             success:false,
-//             message:error.message,
-//             message:"unable to fetch courses for selected categories"
-//         });
-//     }
-// }
 
 
 async function categorypageDetails(req, res){

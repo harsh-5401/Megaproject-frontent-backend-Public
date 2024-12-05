@@ -1,22 +1,6 @@
 import React from 'react'
 
-// function Iconbutton({text , onclick , children , disabled , outline=false , customclasses , type}) {
-//   return (
-//     <button disabled={disabled} onClick={onclick}>
-//         {
-//             children ? (
-//             <div>
-//                 <span>{text}</span>
-//                 {children}
-//             </div>
-            
-//         ) : (
-//             <div>{text}</div>
-//         )
-//         }
-//     </button>
-//   )
-// }
+
 
 function Iconbutton({text , onclick , children , disabled , outline=false , customclasses , type}) {
   return (

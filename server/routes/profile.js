@@ -5,12 +5,7 @@ const{authentication, isinstructor}=require("../middleware/authentication");
 const {getEnrolledCourses, InstructorDashboard} = require("../controller/profile")
 
 const {
-//   deleteAccount,
-//   updateProfile,
-//   getAllUserDetails,
-//   updateDisplayPicture,
-//   getEnrolledCourses,
-//   instructorDashboard,
+
 updateprofile,
 alluserdetails,
 updateprofilepicture

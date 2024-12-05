@@ -41,10 +41,7 @@ function Coursedetails() {
   
       async function handlebuycourse() {
       
-        // if(token) {
-        //   await buyCourse(token , [courseid] , user , navigate , dispatch);
-        //   return; 
-        // }
+        
 
         if(token) {
           await buyCourse(token , [courseid] , user , navigate , dispatch);
@@ -136,67 +133,7 @@ function Coursedetails() {
   return (
     
 
-    // <div className='flex flex-col items-center text-white'>
-
-    //   <div className='relative flex-col justify-start'>
-    //     <p>{coursename}</p>
-    //     <p>{coursedescription}</p>
-    //     <div className='flex gap-x-2'>
-    //       <span>{averagereviewCount}</span>
-    //       <RatingStars Review_Count={averagereviewCount}></RatingStars>
-    //       <span>{`(${ratingAndreviews.length} reviews)`}</span>
-    //       <span>{`(${studentsenrolled.length} students enrolled)`}</span>
-    //     </div>
-
-    //     <div>
-    //       <p>Created by {instructor.firstname}</p>
-    //     </div>
-
-    //     <div>
-    //       <p>Created at {formatDate(createdAt)}</p>
-    //     </div>
-
-    //     <div>
-    //       <CourseDetailsCard 
-    //        course={courseData.coursedata}
-    //        setconfirmationmodal={setconfirmationmodal}
-    //        handlebuycourse={handlebuycourse}
-    //        ></CourseDetailsCard>
-    //     </div>
-    //   </div>
-
-    //   <div>
-    //     <p>What you will Learn</p>
-    //     <div>
-    //       {whatwillyoulearn}
-    //     </div>
-    //   </div>
-
-    //   <div className='flex gap-x-3'>
-    //     <span>
-    //       {coursecontent.length} sections(s)
-    //     </span>
-    //     <span>
-    //       {totalnumberOfLectures} lectures
-    //     </span>
-    //     <span>
-    //       {courseData.totalduration} Total length
-    //     </span>
-    //   </div>
-
-    //   <div>
-    //     <button onClick={()=>setisactive([])}>
-    //       Collapse all sections
-    //     </button>
-    //   </div>
-
-
-
-    //   {
-    //     confirmationmodal && (<ConfirmationModal modaldata={confirmationmodal}></ConfirmationModal>)
-    //   }
-      
-    // </div>
+    
 
 
 

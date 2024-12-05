@@ -66,28 +66,7 @@ function Coursebuilderform() {
     setValue("sectionname" , sectionname)
   }
 
-  // onsubmit function creats and update section and subsection
-  // async function onsubmit(data) {
-  //   setloading(true);
-  //   let result;
-
-  //   if(editsectionname) {
-  //     // we are editting section name
-  //     result=await updateSection(
-  //       {
-  //         sectionname:data.sectionname,
-  //         sectionid: editsectionname,
-  //         courseid:course._id
-  //       } , token
-  //     )
-
-  //     // updated result
-  //     if(result){
-  //       dispatch(setcourse(result));
-  //       setValue("sectioname" , "")
-  //     } 
-  //   }
-  // }
+  
 
   const onsubmit = async (data) => {
     setloading(true)

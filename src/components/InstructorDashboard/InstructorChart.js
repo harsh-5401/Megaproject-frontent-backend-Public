@@ -60,27 +60,7 @@ function InstructorChart({courses}) {
     }
 
   return (
-    // <div className='text-white'>
-    //   <p>Visulaize</p>
-
-    //   <div>
-    //     <button onClick={()=> setcurrentchart("students")}>
-    //       student
-    //     </button>
-
-    //     <button onClick={()=> setcurrentchart("income")}>
-    //       Income
-    //     </button>
-
-    //   </div>
-
-    //   <div>
-    //     <Pie data={currentchart==="students" ? chartdataforStudents : chartdataforincome} options={options}>
-
-    //     </Pie>
-    //   </div>
-
-    // </div>
+   
 
     <div className="flex flex-1 flex-col gap-y-4 rounded-md bg-richblack-800 p-6">
       <p className="text-lg font-bold text-richblack-5">Visualize</p>

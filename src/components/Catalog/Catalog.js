@@ -65,57 +65,6 @@ function Catalog() {
 
   return (
 
-    // <div className='text-white'>
-    //     <div>
-    //         <p>{`Home /Catalog/`}
-    //             <span>{catalogpagedata?.name}</span>
-    //         </p>
-    //         <p>{catalogpagedata?.name}</p>
-    //         <p>{catalogpagedata?.description}</p>
-    //     </div>
-
-    
-    //     <div>
-           
-    //          {/* section 1 */}
-    //         <div>
-    //             <div className='flex gap-x-3'>
-    //                 <p>Most Popular</p>
-    //                 <p>New</p>
-    //             </div>
-    //             <CourseSlider courses={catalogpagedata?.selectedCourses?.courses}></CourseSlider>
-    //         </div>
-
-    //         {/* section 2 */}
-    //         <div>
-    //             <p>Top Courses in {catalogpagedata?.name}</p>
-    //             <div>
-    //                 <CourseSlider courses={catalogpagedata?.differentCourses?.courses}></CourseSlider>
-    //             </div>
-    //         </div>
-
-    //         {/* course 3 */}
-    //         <div>
-    //             <p>Frequently Bought</p>
-    //             <div className='py-8'>
-    //                 <div className='grid grid-cols-1 lg:grid-cols-2'>
-
-    //                     {
-    //                         catalogpagedata?.mostSellingCourses?.map((course)=> {
-    //                            return <CourseCard key={course._id} course={course} height={"h-[400px]"}></CourseCard>
-    //                         })
-    //                     }
-
-    //                 </div>
-    //             </div>
-    //         </div>
-
-    //     </div>
-
-    //     <Footer></Footer>
-
-    // </div>
-
 
     <>
         {

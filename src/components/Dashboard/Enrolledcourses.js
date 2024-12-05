@@ -32,59 +32,7 @@ function Enrolledcourses() {
 
   return (
 
-    // <div>
-    //   <div className='text-white'>
-    //     <h1>Enrolled Courses</h1>
-
-    //     {
-    //         !enrolledcourses ? (<div>
-    //             Loading...
-    //         </div>) : !enrolledcourses.length ? (<div>
-    //             You have not enrolled in any courses
-    //         </div>) : (
-    //             <div>
-    //                 <div>
-    //                     <p>Course Name</p>
-    //                     <p>Duration</p>
-    //                     <p>Progress</p>
-    //                 </div>
-
-    //                 {/* cards shru hote hai ab */}
-    //                 {
-    //                     enrolledcourses.map((course , index) => {
-    //                         return <div key={index} onClick={() => {
-    //                             navigate(
-    //                               `/view-course/${course?._id}/section/${course.coursecontent[0]?._id}/sub-section/${course.coursecontent[0]?.subsection?.[0]?._id}`
-    //                             )
-    //                           }}>
-    //                                     <div>
-    //                                         <img src={course.thumbnail || defaultimage} alt='course thumbnail'></img>
-
-    //                                         <div>
-    //                                             <p>{course.coursename}</p>
-    //                                             <p>{course.coursedescription}</p>
-    //                                         </div>
-
-    //                                     </div>
-
-    //                                     <div>
-    //                                         {course?.courseduration}
-    //                                     </div>
-
-    //                                     <div>
-    //                                         <p> Progress : {course.progresspercentage || 0} %</p>
-    //                                         <ProgressBar maxCompleted={100}  completed={course.progresspercentage || 0} isLabelVisible={false} height='8px'></ProgressBar>
-    //                                     </div>
-
-    //                               </div>
-    //                     })
-    //                 }
-    //             </div>
-    //         )
-    //     }
-    //   </div>
-    // </div>
-
+    
 
     <>
         <div className="text-3xl text-richblack-50">Enrolled Courses</div>

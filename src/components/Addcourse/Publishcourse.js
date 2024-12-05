@@ -73,26 +73,7 @@ function Publishcourse() {
   } = useForm();
 
   return (
-    // <div className='rounded-md border[1px] bg-richblack-800 p-6 border-richblack-700'>
-    //   <p>Publish Course</p>
-    //   <form onSubmit={handleSubmit(onSubmit)}>
-    //     <div>
-    //       <label htmlFor='public'>
-    //       <input type='checkbox' id='public' {...register("public")} className='rounded h-4 w-4'></input>            
-    //         <span className='ml-3'>Make this course Public</span>
-    //       </label>
-          
-    //     </div>
-
-    //       {/* Next Prev Button */}
-          
-    //     <div className='flex justify-end gap-x-3'>
-    //       <button disabled={loading} type='button' onClick={goback} className='flex items-center rounded-md bg-richblack-200 px-5 py-4'>Back</button>
-    //       <Iconbutton disabled={loading} text="save Changes"></Iconbutton>
-    //     </div>
-
-    //   </form>
-    // </div>
+  
 
 
     <div className="rounded-md border-[1px] border-richblack-700 bg-richblack-800 p-6">

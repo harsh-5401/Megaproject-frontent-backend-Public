@@ -142,61 +142,7 @@ function SubsectionModal({modaldata , setmodaldata , add=false , view=false , ed
 
 
   return (
-    // <div>      
-    //   <div>
-    //     <div>
-    //         <p>{view && "Viewing" }  {add && "Adding" } {edit && "Editing" }</p>
-    //         <button onClick={() => (!loading ? setmodaldata(null) : {})}>
-    //             <RxCross1></RxCross1>
-    //         </button>
-    //     </div>
-    //     <form onSubmit={handleSubmit(onSubmit)}>
-    //         <Upload 
-    //         name="lecturevideo" 
-    //         label="lecturevideo" 
-    //         register={register} 
-    //         setValue={setValue} 
-    //         errors={errors} 
-    //         video={true} 
-    //         viewData={view ? modaldata.videourl : null}
-    //         editData={edit ? modaldata.videourl : null}></Upload>
-
-    //         <div>
-    //             <label htmlFor='lecturetitle'>Lecture title</label>
-    //             <input id='lecturetitle' placeholder='lecturetitle' {...register("lecturetitle" , {required:true})}></input>
-    //         </div>
-
-    //         {
-    //             errors.lecturetitle && (
-    //                 <span>Lecture title is Required</span>
-    //             )
-    //         }
-
-    //         <div>
-    //             <label htmlFor='lecturedescription'>Lecture Description</label>
-    //             <textarea id='lecturedescription' placeholder='lecture Description' {...register("lecturedescription" , {required:true})}></textarea>
-    //         </div>
-
-    //         {
-    //             errors.lecturedescription && (
-    //                 <span>lecturedescription is Required</span>
-    //             )
-    //         }
-
-    //         {
-    //             !view && (
-    //                 <div>
-    //                     <Iconbutton text={loading ? "Loading..." : edit ? "Save Changes" : "Save "}></Iconbutton>
-    //                 </div>
-    //             )
-    //         }
-    //     </form>
-    //   </div>
-    // </div>
-
-
-
-
+    
     <div className="fixed inset-0 z-[1000] !mt-0 grid h-screen w-screen place-items-center overflow-auto bg-white bg-opacity-10 backdrop-blur-sm">
       <div className="my-10 w-11/12 max-w-[700px] rounded-lg border border-richblack-400 bg-richblack-800">
         {/* Modal Header */}

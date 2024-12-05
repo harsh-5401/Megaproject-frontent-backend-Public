@@ -18,33 +18,7 @@ function CourseCard({course , height}) {
 
   return (
 
-    // <div>
-    //   <Link to={`/courses/${course._id}`}>
-
-    //     <div>
-
-    //         <div>
-    //             <img src={course._thumbnail || defaultThumbnail } alt='thumbail' className={`${height} w-full rounded-xl object-cover`}></img>
-    //         </div>
-
-    //         <div>
-
-    //             <p>{course.coursename}</p>
-    //             <p>{course?.instructor.firstname} {course?.instructor.lastname}</p>
-    //             <div className='flex flex-x-2'>
-    //                 <span>{averagereviewcount || 0}</span>
-    //                 <RatingStars review_count={averagereviewcount}></RatingStars>
-    //                 <span>{course?.ratingAndreviews.length} Ratings</span>
-    //             </div>
-    //             <p>{course?.price}</p>
-
-    //         </div>
-
-    //     </div>
-
-    //   </Link>
-
-    // </div>
+   
 
     <div>
         <Link to={`/courses/${course._id}`}>

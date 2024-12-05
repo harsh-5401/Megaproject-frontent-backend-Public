@@ -14,16 +14,7 @@ import { IoIosArrowDown } from 'react-icons/io'
 import { RxHamburgerMenu } from 'react-icons/rx'
 
 
-// const sublinks = [
-//     {
-//         title: "Python",
-//         link:"/catalog/python"
-//     },
-//     {
-//         title: "Web Dev",
-//         link:"/catalog/web-development"
-//     },
-// ];
+
 
 
 function Navbar() {
@@ -64,9 +55,7 @@ function Navbar() {
 
     } 
 
-    // async function printsublinks() {
-    //     console.log("sublinks data is" , sublinks)
-    // }
+    
 
     useEffect(()=> {
         // console.log("token is" , token)
@@ -74,12 +63,7 @@ function Navbar() {
         // printsublinks();   
     } , [])
 
-    // useEffect(()=> {
-    //     console.log("token is" , token)
-    //     fetchsublinks();
-    //     // printsublinks();
-       
-    // } , [course])
+
 
 
   return (

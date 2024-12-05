@@ -12,7 +12,7 @@ import Reviewslider from '../components/common/Reviewslider'
 import Footer from '../components/common/Footer'
 import Contactformsection from '../components/Contactpage/Contactformsection'
 
-// function About() {
+
 //   return (
 //     <div className='text-richblack-50 mx-auto'>
 //         {/* section1 */}

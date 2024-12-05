@@ -10,108 +10,7 @@ const courseprogressmodel= require("../models/courseprogress")
 
 
 
-// async function creatcourse(req,res){
-//     try{
-//         // fectch data and file
 
-//         const {coursename , coursedescription , whatwillyoulearn , price , category } =req.body;
-
-//         console.log(coursename , coursedescription , whatwillyoulearn , price , category )
-
-//         // get thumbnail/file
-//         const thumbnail=req.files.thumbnailimage;
-
-//         // validation
-//         if(!coursename || !coursedescription || !whatwillyoulearn || !price || !category || !thumbnail) {
-//             return res.status(400).json({
-//                 success:false,
-//                 message:"all fields are required"
-//             });
-//         }
-
-       
-
-//         // check for insructor and fetch instructor id to put it inside course
-//         // asumme we dont have role inside payload
-//         const userid=req.user.id;
-//         const instructordetails=await User.findById(userid);
-//         console.log("instructor details=>" , instructordetails);
-
-//         // if no instrctror find
-//         if(!instructordetails){
-//             return res.status(404).json({
-//                 success:false,
-//                 message:"instructor details not found"
-//             });
-//         }
-
-//         // check if category is valid or not 
-//         // note : => here our category is a  id
-//         const categorydetails=await categorymodel.findById(category);
-//         if(!categorydetails){
-//             return res.status(404).json({
-//                 success:false,
-//                 message:"category details not found"
-//             });
-//         }
-
-//         // upload image to cloudinary
-
-//         const thumbnailimage=await uploadimagetocloudinary(thumbnail , process.env.FOLDER_NAME);
-
-//         // creat entry of new course 
-
-//         const newcourse=await coursemodel.create({
-//             coursename, 
-//             coursedescription,
-//             instructor:instructordetails._id,
-//             price,
-//             whatwillyoulearn:whatwillyoulearn,
-//             category:categorydetails._id,
-//             thumbnail:thumbnailimage.secure_url
-
-//         });
-
-//         // update user which is intrcutor here he dont need to buy this course
-//         // add new course to userschema of instrucot
-
-//         await User.findByIdAndUpdate(
-//             {_id:instructordetails._id},
-//             {
-//                 $push:{
-//                     courses:newcourse._id
-//                 }
-//             },
-//             {new:true}
-//         );
-
-//         // update category schema homework TODO:
-
-//         await categorymodel.findByIdAndUpdate(category,
-//             {
-//                 $push: {
-//                     course: newcourse._id
-//                 }
-//             })
-            
-//         // return response
-
-//         return res.status(200).json({
-//             success:true,
-//             message:"course created succesfully",
-//             data:newcourse
-//         })
-
-//     } catch(error){
-//         console.log(error);
-//         return res.status(500).json({
-//             success:false,
-//             message:error.message,
-//             message:"unable to creat new course"
-           
-//         });
-//     }
-// }
 
 
 
@@ -122,14 +21,11 @@ async function creatcourse(req,res){
     try{
         // fectch data and file
 
-        // console.log("data to create course is " , req)
+        
 
         const {coursename , coursedescription , whatwillyoulearn , price , category , status , instructions} =req.body;
 
-        // console.log(coursename , coursedescription , whatwillyoulearn , price , category , status , instructions )
-        // console.log("status is " , status)
-        // console.log("instruction is " , instructions)
-
+       
         // get thumbnail/file
         // const thumbnail=req.files.thumbnailimage;
 
@@ -413,74 +309,7 @@ async function editcourse(req,res) {
       }
 }
 
-// exports.editCourse = async (req, res) => {
-//     try {
-//       const { courseId } = req.body
-//       const updates = req.body
-//       const course = await coursemodel.findById(courseId)
-  
-//       if (!course) {
-//         return res.status(404).json({ error: "Course not found" })
-//       }
-  
-//       // If Thumbnail Image is found, update it
-//       if (req.files) {
-//         console.log("thumbnail update")
-//         const thumbnail = req.files.thumbnailImage
-//         const thumbnailImage = await uploadimagetocloudinary(
-//           thumbnail,
-//           process.env.FOLDER_NAME
-//         )
-//         course.thumbnail = thumbnailImage.secure_url
-//       }
-  
-//       // Update only the fields that are present in the request body
-//       for (const key in updates) {
-//         if (updates.hasOwnProperty(key)) {
-//           course[key] = updates[key]
-//           // if (key === "tag" || key === "instructions") {
-//           //   course[key] = JSON.parse(updates[key])
-//           // } else {
-//           //   course[key] = updates[key]
-//           // }
-//         }
-//       }
-  
-//       await course.save()
-  
-//       const updatedCourse = await coursemodel.findOne({
-//         _id: courseId,
-//       })
-//         .populate({
-//           path: "instructor",
-//           populate: {
-//             path: "additionalDetails", 
-//           },
-//         })
-//         .populate("category")
-//         .populate("ratingAndReviews")
-//         .populate({
-//           path: "courseContent",
-//           populate: {
-//             path: "subSection",
-//           },
-//         })
-//         .exec()
-  
-//       res.json({
-//         success: true,
-//         message: "Course updated successfully",
-//         data: updatedCourse,
-//       })
-//     } catch (error) {
-//       console.error(error)
-//       res.status(500).json({
-//         success: false,
-//         message: "Internal server error",
-//         error: error.message,
-//       })
-//     }
-//   }
+
 
 
 
@@ -630,23 +459,7 @@ async function editcourse(req,res) {
         })
         .exec()
 
-        // const courseDetails = await coursemodel.findById(courseid);
-        // const fullcoursedetails=courseDetails.populate({
-        //   path: "instructor",
-        //   populate: {
-        //     path: "additionalDetails",
-        //   },
-        // })
-        // .populate("category")
-        // .populate({
-        //   path: "coursecontent",
-        //   populate: {
-        //     path: "subsection",
-        //   },
-        // })
-        // .exec()
-
-        // .populate("ratingAndReviews")
+        
   
       let courseProgressCount = await courseprogressmodel.findOne({
         courseid: courseid,
@@ -662,26 +475,7 @@ async function editcourse(req,res) {
         })
       }
 
-    //   unwanted 
-  
-      // if (courseDetails.status === "Draft") {
-      //   return res.status(403).json({
-      //     success: false,
-      //     message: `Accessing a draft course is forbidden`,
-      //   });
-      // }
-
-      //   unwanted 
-  
-    //   let totalDurationInSeconds = 0
-    //   courseDetails.courseContent.forEach((content) => {
-    //     content.subSection.forEach((subSection) => {
-    //       const timeDurationInSeconds = parseInt(subSection.timeDuration)
-    //       totalDurationInSeconds += timeDurationInSeconds
-    //     })
-    //   })
-  
-    //   const totalDuration = convertSecondsToDuration(totalDurationInSeconds)
+    
   
       return res.status(200).json({
         success: true,

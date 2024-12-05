@@ -43,29 +43,7 @@ function Reviewslider() {
   },[])
 
   return (
-    // <div className='text-white'>
-
-    //   <div className='h-[190px] max-w-maxContent'>
-    //     <Swiper slidesPerView={4} spaceBetween={24} loop={true} autoplay={{delay:2500}} modules={[FreeMode , Pagination , Autoplay]}>
-
-
-    //         {
-    //           reviews.map((review , index) => {
-    //            return <SwiperSlide key={index}>
-    //               <img src={review.user.image || `https://api.dicebear.com/5.x/initials/svg?seed=${review.user.firstname}-${review.user.lastname}`} alt='userImage' className='h-9 w-9 object-cover rounded-full'></img>
-    //               <p>{review.course.coursename}</p>
-    //               <p>{review.user.firstname} {review.user.lastname}</p>
-    //               <p>{review?.review}</p>
-    //               <p>{review?.rating.toFixed(1)}</p>
-    //               <Reactstars count={5} value={review?.rating} size={20} edit={false} fullIcon={<FaStar></FaStar>} emptyIcon={<FaStar></FaStar>} activeColor="" ></Reactstars>
-    //             </SwiperSlide>
-    //           })
-    //         }
-
-    //     </Swiper> 
-    //   </div>
-      
-    // </div>
+    
 
     <div className="text-white w-full">
       <div className="my-[50px] h-[184px] max-w-maxContentTab lg:max-w-maxContent">

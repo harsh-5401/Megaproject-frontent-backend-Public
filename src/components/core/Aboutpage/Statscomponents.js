@@ -8,28 +8,7 @@ const Stats = [
 ];
 
 
-// function Statscomponents() {
-//   return (
-//     <section>
-//         <div>
-//             <div className='flex flex-row gap-4'>
-//                 {
-//                     Stats.map((data , index)=> {
-//                         return <div key={index}>
-//                                     <h1>
-//                                         {data.count}
-//                                     </h1>
-//                                     <h2>
-//                                         {data.label}
-//                                     </h2>
-//                                </div>
-//                     })
-//                 }
-//             </div>
-//         </div>
-//     </section>
-//   )
-// }
+
 
 
 function Statscomponents() {

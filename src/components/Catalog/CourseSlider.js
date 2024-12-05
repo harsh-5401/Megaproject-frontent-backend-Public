@@ -10,21 +10,7 @@ import CourseCard from './CourseCard'
 function CourseSlider({courses}) {
   return (
 
-    // <div>
-    //   {
-    //     courses?.length ? (
-    //       <Swiper loop={true} slidesPerView={1} spaceBetween={100} modules={Pagination}  Pagination={true}>
-    //         {
-    //           courses?.map((course)=> {
-    //             return <SwiperSlide key={course._id}>
-    //               <CourseCard course={course} height={"h-[250px]"}></CourseCard>
-    //             </SwiperSlide>
-    //           })
-    //         }
-    //       </Swiper>
-    //     ) : (<div> No coures are found</div>)
-    //   }
-    // </div>
+    
 
     <>
         {

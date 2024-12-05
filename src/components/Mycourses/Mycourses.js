@@ -26,17 +26,7 @@ function Mycourses() {
     },[])
 
   return (
-    // <div className='w-[100%]'>
-
-    //   <div>
-    //     <h1 className='text-yellow-50'>My courses</h1>
-    //     <Iconbutton text="Add Course" onclick={()=> navigate("/dashboard/add-course")}></Iconbutton>
-    //   </div>
-
-    //   {
-    //     courses && <CoursesTable courses={courses} setcourses={setcourses}></CoursesTable>
-    //   }
-    // </div>
+    
 
     <div>
       <div className="mb-14 flex items-center justify-between">

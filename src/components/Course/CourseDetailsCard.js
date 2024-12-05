@@ -46,59 +46,7 @@ function CourseDetailsCard({course , setconfirmationmodal , handlebuycourse}) {
 
     return (
 
-    // <div>
-
-    //   <div>
-    //     <img src={course.thumbail || defaultimage} alt='thumbnail' className='max-h-[300px] w-[400px] min-h-[180px]' ></img>
-    //   </div>
-
-    //   <div>
-    //    Rs. {course.price}
-    //   </div>
-    //   <div className='flex flex-col gap-y-6'>
-    //     <button className='bg-yellow-50 w-fit text-richblack-700' onClick= { user && course?.studentsenrolled?.includes(user?._id) ? ()=> navigate("/dashboard/enrolled-courses") : ()=>handlebuycourse()}>
-    //         {
-    //             user && course?.studentsenrolled?.includes(user?._id) ? "Go to Course" : "Buy now"
-    //         }
-    //     </button>
-
-    //     {
-    //         (!course?.studentsenrolled?.includes(user?._id)) && (
-    //             <button className='bg-yellow-50 w-fit text-richblack-700' onClick={handleAddtoCart}>
-    //                 Add to Cart
-    //             </button>
-    //         )
-    //     }
-    //   </div>
-
-    //   <div>
-
-    //     <p>
-    //         30 days MoneyBack Gaurantee
-    //     </p>
-    //     <p>This Course Incldes :</p>
-
-    //     <div className='flex flex-col gap-y-3'>
-    //         {
-    //             JSON.parse(instructions).map((item , index)=> (
-    //                 <p key={index}>
-    //                     <span>{item}</span>
-    //                 </p>
-    //             ))
-    //         }
-    //     </div>
-
-    //     <div>
-    //         <button className='mx-auto items-center gap-2 p-6 text-yellow-50' onClick={handleshare}>
-    //             Share
-    //         </button>
-    //     </div>
-
-    //   </div>
-
-        
-
-    // </div>
+    
 
     <div className='flex flex-col gap-4 rounded-md bg-richblack-700 p-4 text-richblack-5'>
     <img 

@@ -15,21 +15,7 @@ function EditCourse() {
 
     
 
-    // async function getcourseInformation () {
-    //     setloading(true);
-    //     const result = await getFullDetailsOfCourse(courseid , token);
-    //     console.log("course to be ediited info" , result)
-    //     if(result) {
-    //         dispatch(seteditcourse(true));
-    //         dispatch(setcourse(true))
-    //     }
-
-    //     setloading(false)
-    // }
-
-    // useEffect(()=> {
-    //     getcourseInformation();
-    // } , [])
+   
 
     useEffect(() => {
         ;(async () => {
