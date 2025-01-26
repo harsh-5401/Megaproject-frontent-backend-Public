@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+# 📚 StudyNotion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **StudyNotion**, your go-to platform for seamless online learning and course management. Whether you're an educator or a learner, StudyNotion offers a comprehensive suite of tools to enhance your educational experience.
 
-## Available Scripts
+## 📖 Table of Contents
 
-In the project directory, you can run:
+- [✨ Features](#-features)
+- [🚀 Quick Start](#-quick-start)
+- [🔧 Environment Setup](#-environment-setup)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+- [📬 Contact](#-contact)
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Authentication**: Secure sign-up, login, and password management using JWT.
+- **Course Management**: Create, edit, and manage courses effortlessly.
+- **Payment Integration**: Smooth payment processing with Razorpay.
+- **Notifications**: Automated email alerts for enrollments and payments.
+- **Profile Management**: User-friendly profile customization.
+- **Progress Tracking**: Monitor and track course progress.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Quick Start
 
-### `npm test`
+Get up and running with StudyNotion in a few simple steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository:**
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/yourusername/studynotion.git
+   cd studynotion
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - **Client:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+     ```bash
+     cd client
+     npm install
+     ```
 
-### `npm run eject`
+   - **Server:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+     ```bash
+     cd ../server
+     npm install
+     ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Run the application:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - **Client:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+     ```bash
+     cd client
+     npm start
+     ```
 
-## Learn More
+     Access the client at `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - **Server:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+     ```bash
+     cd ../server
+     npm start
+     ```
 
-### Code Splitting
+     Access the server at `http://localhost:4000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔧 Environment Setup
 
-### Analyzing the Bundle Size
+To configure the environment variables for both the client and server, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Client
 
-### Making a Progressive Web App
+Create a `.env` file in the `client` directory with the following content:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+plaintext
+REACT_APP_BASE_URL=http://localhost:4000/api/v1
 
-### Advanced Configuration
+### Server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Create a `.env` file in the `server` directory with the following content:
 
-### Deployment
+```plaintext
+PORT=4000
+MONGODB_URL="your_mongodb_connection_string"
+JWT_SECRET=your_jwt_secret
+RAZORPAY_KEY=your_razorpay_key
+RAZORPAY_SECRET=your_razorpay_secret
+MAIL_HOST=smtp.gmail.com
+MAIL_USER=your_email@gmail.com
+MAIL_PASSWORD=your_email_app_password
+CLOUD_NAME=your_cloudinary_cloud_name
+API_KEY=your_cloudinary_api_key
+API_SECRET=your_cloudinary_api_secret
+FOLDER_NAME=your_cloudinary_folder_name
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+> **Note:** Replace placeholder values with your actual credentials. Ensure sensitive information like API keys and secrets are kept secure and not shared publicly.
 
-### `npm run build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We welcome contributions! To get started:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 📬 Contact
+
+For questions or feedback, please reach out to:
+
+- **Your Name**: [ece22135@iiitkalyani.ac.in](mailto:ece22135@iiitkalyani.ac.in)
+- **Project Link**: [https://github.com/harsh-5401/studynotion](https://github.com/harsh-5401/studynotion-frontend-Backend-.git)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
